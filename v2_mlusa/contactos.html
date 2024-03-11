@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/components/header/styles.css">
+    <link rel="stylesheet" href="/components/contentContactos/styles.css">
+    <title>Contactos</title>
+    
+    <style>
+        .contactos {
+            margin-top: 7rem;
+        }
+    </style>
+
+</head>
+<body style="margin: 0; padding: 0;">
+
+
+    <div id="header"></div>
+
+    <section class="contactos">
+
+        <div id="contentContactos"></div>
+
+        <div id="footer"></div>
+
+    </section>
+
+    <script src="/components/header/header.js"></script>
+
+    <script>
+        // Use a Fetch API para carregar o conteúdo do header.html
+        fetch('/components/header')
+            .then(response => response.text())
+            .then(html => {
+                // Insira o conteúdo do header.html na div #header
+                document.getElementById('header').innerHTML = html;
+            });
+
+        fetch('/components/contentContactos')
+            .then(response => response.text())
+            .then(html => {
+                // Insira o conteúdo do header.html na div #header
+                document.getElementById('contentContactos').innerHTML = html;
+            });
+
+        fetch('/footer.html')
+            .then(response => response.text())
+            .then(html => {
+                // Insira o conteúdo do header.html na div #header
+                document.getElementById('footer').innerHTML = html;
+            });
+
+    </script>
+</body>
+</html>

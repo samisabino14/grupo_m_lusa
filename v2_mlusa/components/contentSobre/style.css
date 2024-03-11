@@ -1,0 +1,70 @@
+.contentSobre {
+    display: grid;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    text-align: justify;
+}
+
+.titleSobre {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-weight: 800;
+}
+
+@media (min-width: 768px) {
+    .contentSobre {
+        gap: 2rem;
+        padding: 2.5rem;
+        padding-left: 8rem;
+        padding-right: 8rem;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+
+    }
+
+    .titleSobre {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .itemSobre {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contentSobre {
+        gap: 2rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .titleSobre {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+    }
+}
+
+@media (max-width: 620px) {
+
+    .itemSobre {
+        font-size: small;
+    }
+
+    .titleSobre {
+        margin-top: 2rem;
+
+    }
+
+
+}

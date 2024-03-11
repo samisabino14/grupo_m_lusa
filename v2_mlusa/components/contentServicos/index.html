@@ -1,0 +1,196 @@
+<div class="content_servicos">
+
+    <h1 class="title_content_servicos">Serviços</h1>
+
+    <div class="all_services">
+
+        <div class="one_service">
+
+            <img width="320" height="280" alt="" src="../../imgs/1.jpg" alt="">
+            <p style='text-align: center;'>Agropecuária</p>
+
+        </div>
+
+        <div class="one_service">
+
+            <img width="320" height="280" alt="" src="../../imgs/ml2.jpg" alt="">
+            <p style='text-align: center;'>Construção Civil</p>
+
+        </div>
+
+        <div class="one_service">
+
+            <img width="320" height="280" alt="" src="../../imgs/ml3.jpg" alt="">
+            <p style='text-align: center;'>Cultura</p>
+
+        </div>
+
+        <div class="one_service">
+
+            <img width="320" height="280" alt="" src="../../imgs/ml4.jpg" alt="">
+            <p style='text-align: center;'>Desporto</p>
+
+        </div>
+
+        <div class="one_service">
+
+            <img src="../../imgs/ml5.jpg" width="320" height="280" alt="" alt="">
+            <p style='text-align: center;'>Educação</p>
+
+        </div>
+    </div>
+
+    <div class="descricao_services">
+
+
+        <div class="details">
+
+            <h1 class="title_details">Agropecuária</h1>
+
+            <hr style='margin-top: 1rem;margin-bottom: 1rem;' />
+
+            <div class="all_details">
+                <div class="one_details">
+                    <h2 class="title_one_detail">Produção Agrícola</h2>
+                    <div class="one_details_son">
+
+                        <p>Cereais</p>
+                        <p>Frutas</p>
+                        <p>Legumes</p>
+
+                    </div>
+                </div>
+                <div class="one_details">
+                    <h2 class='title_one_detail'>Produção Animal</h2>
+
+                    <div class="one_details_son">
+                        <p>Gado Bovino</p>
+                        <p>Suíno</p>
+                        <p>Caprino e aves</p>
+                    </div>
+                </div>
+                <div class="one_details">
+                    <h2 class='title_one_detail'>Aquacultura</h2>
+
+                    <div class="one_details_son">
+                        <p>Criação de peixes</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="flex_son">
+
+            <div class="details">
+
+                <h1 class="title_details">Construção Civil</h1>
+
+                <hr style='margin-top: 1rem;margin-bottom: 1rem;' />
+
+                <div class="all_details2">
+                    <div class="one_details">
+                        <h2 class="title_one_detail">Produção de:</h2>
+                        <div class="one_details_son">
+
+                            <p>Blocos</p>
+                            <p>Lancis</p>
+                            <p>Latojas </p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="details">
+
+                <h1 class="title_details">Cultura</h1>
+
+                <hr style='margin-top: 1rem;margin-bottom: 1rem;' />
+
+                <div class="all_details2">
+                    <div class="one_details">
+                        <h2 class="title_one_detail">Academia de:</h2>
+                        <div class="one_details_son">
+
+                            <p>Música</p>
+                            <p>Dança </p>
+                            <p>Arte</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="flex_son">
+
+            <div class="details">
+
+                <h1 class="title_details">Desporto</h1>
+
+                <hr style='margin-top: 1rem;margin-bottom: 1rem;' />
+
+                <div class="all_details2">
+                    <div class="one_details">
+                        <h2 class="title_one_detail">Academia de:</h2>
+                        <div class="one_details_son">
+
+                            <p>Futebol</p>
+                            <p>Basquetebol</p>
+                            <p>Andebol</p>
+                            <p>Futsal</p>
+                            <p>Natação</p>
+                            <p>Ténis de Campo</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="details">
+
+                <h1 class="title_details">Educação</h1>
+
+                <hr style='margin-top: 1rem;margin-bottom: 1rem;' />
+
+                <div class="all_details2">
+                    <div class="one_details">
+                        <h2 class="title_one_detail">Ensinos:</h2>
+                        <div class="one_details_son">
+
+                            <p>Pré-escolar</p>
+                            <p>Primário</p>
+                            <p>Secundário</p>
+                            <p>Médio</p>
+                            <p>Superior </p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+    fetch('/components/header')
+        .then(response => response.text())
+        .then(html => {
+            // Insira o conteúdo do header.html na div #header
+            document.getElementById('header').innerHTML = html;
+        });
+</script>
+</body>
+
+</html>

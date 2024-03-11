@@ -1,0 +1,21 @@
+.paragraph_intro {
+    padding: 1.5rem/* 40px */;
+    text-align: justify;
+    font-size: 0.75rem/* 12px */;
+    line-height: 1rem/* 16px */;
+}
+
+@media (min-width: 768px) {
+    .paragraph_intro {
+        margin-top: 2.5rem/* 40px */;
+        padding-left: 8rem/* 128px */;
+        padding-right: 8rem/* 128px */;
+    }
+}
+
+@media (min-width: 1024px) {
+    .paragraph_intro {
+        font-size: 1rem/* 16px */;
+        line-height: 1.5rem/* 24px */;
+    }
+}

@@ -1,0 +1,144 @@
+.bg-image {
+    background-image: url("../../imgs/agriculrura2.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-position: 60%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container_hero {
+    margin-top: 20px;
+    max-width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 10;
+}
+
+.content_hero {
+    text-align: center;
+    color: #fff;
+    display: grid;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #CBD5E0;
+}
+
+.divider {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #029962;
+    height: 2px;
+    width: 150px;
+}
+
+.paragraph {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #F3F4F6;
+    letter-spacing: 0.05em;
+}
+
+@media (min-width: 768px) {
+    .content_hero {
+        gap: 10px;
+    }
+
+    .title {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+    }
+
+    .subtitle {
+        font-size: 2rem;
+    }
+
+    .paragraph {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .title {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .subtitle {
+        font-size: 2.25rem;
+    }
+}
+
+.container {
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    .content_hero {
+        max-width: 640px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .content_hero {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .content_hero {
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .content_hero {
+        max-width: 1280px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .content_hero {
+        max-width: 1536px;
+    }
+}
+
+
+@media (max-width: 620px) {
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .bg-image {
+        height: 60vh;
+    }
+}

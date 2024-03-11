@@ -1,0 +1,137 @@
+.containerContactos a,
+i {
+    color: gray;
+}
+
+.containerContactos a {
+    font-size: small;
+}
+
+.containerContactos a:hover {
+    color: green;
+}
+
+.containerContactos {
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: justify;
+}
+
+.titleContactos {
+    font-weight: 600;
+    text-align: center;
+}
+
+.contentContactos {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemContacto {
+
+    display: grid;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 0.375rem;
+    text-align: center;
+}
+
+.itemContacto_son {
+    display: grid;
+    font-size: small;
+}
+
+.itemContacto_icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.gray {
+    color: gray;
+}
+
+
+.itemContacto_son h1 {
+    font-size: medium;
+}
+
+@media (min-width: 768px) {
+    .containerContactos {
+        padding: 2rem 8rem;
+        padding-right: 8rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .titleContactos {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .contentContactos {
+        gap: 2.5rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .itemContacto {
+        gap: 1rem;
+        padding: 2rem;
+    }
+
+
+    .itemContacto_icons {}
+
+}
+
+@media (min-width: 1024px) {
+    .containerContactos {}
+
+    .titleContactos {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+    }
+
+    .contentContactos {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .itemContacto {
+        --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    }
+
+    .itemContacto_son {}
+
+
+    .itemContacto_icons {}
+
+}
+
+@media (max-width: 620px) {
+    .containerContactos {
+        gap: 0rem;
+    }
+
+    .itemContacto {
+        border: 1px solid #eee;
+        margin: 4px;
+    }
+
+    .itemContacto_son h1 {
+        font-size: small;
+
+    }
+    
+    .titleContactos {
+        font-size: 16px;
+    }
+
+}
